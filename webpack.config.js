@@ -1,7 +1,6 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
   devtool: 'source-map',
@@ -18,7 +17,7 @@ module.exports = {
         test: /\.(png|jpg|gif|cur)$/i, dependency: { not: ['url'] }, use: [{ loader: 'url-loader', options: { limit: 8192 } }], type: 'javascript/auto',  // eslint-disable-line
       },
       { test: /\.html$/, include: [path.resolve(__dirname, 'src/js/service-worker.js')], use: { loader: 'file-loader' } },
-      { test: /web-worker\.js$/, use: { loader: "worker-loader" },}
+      { test: /web-worker\.js$/, use: { loader: 'worker-loader' } }
     ]
   },
   resolve: {
@@ -33,9 +32,5 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css'
     })
-    // new WorkboxPlugin.InjectManifest({
-    //   swSrc: './src/js/service-worker.js'
-
-    // })
   ]
 }

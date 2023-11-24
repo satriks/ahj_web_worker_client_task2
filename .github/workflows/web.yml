@@ -1,4 +1,4 @@
-name:  ahj WebWorker task1
+name:  ahj WebWorker task2
 
 on: [push, pull_request]
 
