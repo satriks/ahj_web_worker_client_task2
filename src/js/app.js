@@ -1,3 +1,4 @@
-import WidgetCrypto from "./widget/cripto/WidgetCripto";
+import WidgetCrypto from "./widget/WidgetCrypto";
+
 
 const widget = new WidgetCrypto()

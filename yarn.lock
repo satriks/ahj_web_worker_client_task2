@@ -1938,6 +1938,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@npmlib/file-to-arraybuffer@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@npmlib/file-to-arraybuffer/-/file-to-arraybuffer-0.0.3.tgz#b336fb78dd54d00951ba1499716e12a2c70556d5"
+  integrity sha512-wvA/hcDacRW5lGKp+AzpSgLSSUQUCkYPnOPlOpID7d6R52B95fHj9LeCuaKyB2NDmukEp+T7p+2wdGyTrFeG8g==
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
